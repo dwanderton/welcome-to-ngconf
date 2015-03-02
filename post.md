@@ -6,6 +6,12 @@ $(document).ready(function(){
     $('.rail1CTA').css('display', 'none').remove();
     $('hr').css('display', 'none').remove();
     $('.share').css('border-bottom', '0px');
+
+    $( "#nextButton" ).click(function() {
+        alert( "Handler for .click() called." );
+    });
+    
+    
 });
 
 </script>
@@ -62,7 +68,7 @@ $(document).ready(function(){
     
   </div>
 
-  <button track-click="auth" data="subscribe" class="btn btn-primary" tabindex="33214"><b>Next</b></button>
+  <button id="nextButton" track-click="auth" data="subscribe" class="btn btn-primary" tabindex="33214"><b>Next</b></button>
   
  <div id="fullnameContainer" style="display:none;" class="homeNameDiv"  form-group="">
     <input id="fullname" name="name" form-control="" type="text" placeholder="Enter full name (e.g. John Smith)" required="" tabindex="33212"  >

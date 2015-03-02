@@ -1,10 +1,10 @@
-<style>.entry-title, .author, .asset, #table-of-contents {display: none!important;}
+<style>/*.entry-title, .author, .asset, #table-of-contents {display: none!important;}
 body > div > main > article > ul {display: none!important;}
 .entry-header {display:none!important;}#side, header {display:none!important;}
 </style>
 <script>
 $(document).ready(function(){
-    $('header').css('display', 'none').remove();
+ /*  $('header').css('display', 'none').remove();
     $('#side').css('display', 'none').remove();
     $('body > div > main > article > ul').css('display', 'none').remove();
 $('hr').css('display', 'none').remove();

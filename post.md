@@ -4,7 +4,7 @@ $(document).ready(function(){
    $('.entry-title').css('display', 'none').remove();
     $('#posts').css('display', 'none').remove();
     $('.rail1CTA').css('display', 'none').remove();
-
+    $('hr').css('display', 'none').remove();
 });
 
 </script>

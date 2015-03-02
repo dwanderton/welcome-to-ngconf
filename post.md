@@ -54,13 +54,19 @@ $(document).ready(function(){
 
 <h3>Get introduced to over 2,000 of the <b>best software experts</b> on the web</h3>
 
-<form id="joinForm" novalidate="" name="joinForm">
-<div class="homeNameDiv ng-scope form-group has-error has-feedback" ng-if="data.email" form-group="">
-    <input id="homeJoinName" name="name" form-control="" type="text" placeholder="Enter full name (e.g. John Smith)">
+<form id="joinForm" novalidate="" name="joinForm" ng-submit="submit(joinForm.$valid, data)" class="ng-invalid ng-invalid-required ng-valid-pattern ng-valid-minlength ng-valid-email ng-dirty">
 
+  <!-- ngIf: data.email --><div class="homeNameDiv ng-scope form-group has-error has-feedback" ng-if="data.email" form-group="">
+    <input id="homeJoinName" name="name" form-control="" type="text" placeholder="Enter full name (e.g. John Smith)" ng-model="data.name" required="" ng-minlength="4" ng-pattern="/\w+ \w+/" tabindex="33212" ng-focus="focusInput(this)" ng-blur="blurInput(this)" class="ng-pristine form-control ng-invalid ng-invalid-required ng-valid-pattern ng-valid-minlength ng-touched">
 
-  <button type="submit" class="btn btn-primary" tabindex="33214" ><b>Join</b></button>
+    
+  </div><!-- end ngIf: data.email -->
 
+  <!-- ngIf: !data.email -->
+
+  <button track-click="auth" data="subscribe" ng-class="data.email ? '' : 'focushide'" type="submit" class="btn btn-primary" tabindex="33214" ng-focus="focusInput(this)"><b>Join</b></button>
+
+  <!-- ngIf: data.email --><!-- end ngIf: data.email -->
 
 <a href="#">Actually I'm a software expert!</a>
 </form>

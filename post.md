@@ -51,7 +51,7 @@ $(document).ready(function(){
             $('#ineedhelp').fadeIn();
         });
     });
-    $( "#ineedhelo" ).click(function(event) {
+    $( "#ineedhelp" ).click(function(event) {
         event.preventDefault();
         $(this).fadeOut(400, 'swing', function(){
             $('#imexpert').fadeIn();

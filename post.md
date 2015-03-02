@@ -32,7 +32,14 @@ $(document).ready(function(){
                 var getting=$.get(url,{col1:email, col2:fullname});
             }
             catch(e){console.log("just a safari bug");}
-            $('submitButton').text('thanks!');
+            
+            $(this).fadeOut();
+            $('#fullnameContainer').fadeOut(400, 'swing', function(){
+                
+                
+                
+            });
+            
             j++;
         }
     });
@@ -84,6 +91,8 @@ $(document).ready(function(){
 
 
 <h3>Get introduced to over 2,000 of the <b>best software experts</b> on the web</h3>
+
+<h3>Thanks for signing up! We'll contact you shortly!</h3>
 
 <form id="joinForm" novalidate="" name="joinForm">
 

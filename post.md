@@ -14,9 +14,11 @@ $(document).ready(function(){
         if(i==0){
             alert( "Handler for .click() called." );
             $(this).fadeOut();
-            $('#emailContainer').fadeOut();
-            $('#submitButton').fadeIn();
-            $('#fullnameContainer').fadeIn();
+            $('#emailContainer').fadeOut(400, 'swing', function(){
+                $('#submitButton').fadeIn();
+                $('#fullnameContainer').fadeIn();
+            });
+
             i++;
         }
     });

@@ -15,6 +15,8 @@ $(document).ready(function(){
             alert( "Handler for .click() called." );
             $(this).fadeOut();
             $('#emailContainer').fadeOut();
+            $('#submitButton').fadeIn();
+            $('#fullnameContainer').fadeIn();
             i++;
         }
     });

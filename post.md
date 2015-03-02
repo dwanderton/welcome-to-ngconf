@@ -1,6 +1,7 @@
 <style>
 .entry-title {display:none;}
 #posts {display:none;}
+.rail1CTA {display:none;}
 </style>
 <script>
 $(document).ready(function(){

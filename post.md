@@ -6,9 +6,13 @@ $(document).ready(function(){
     $('.rail1CTA').css('display', 'none').remove();
     $('hr').css('display', 'none').remove();
     $('.share').css('border-bottom', '0px');
-
+    
+    var i = 0;
     $( "#nextButton" ).click(function() {
-        alert( "Handler for .click() called." );
+        if(i==0){
+            alert( "Handler for .click() called." );
+            i++;
+        }
     });
     
     

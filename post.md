@@ -54,19 +54,26 @@ $(document).ready(function(){
 
 <h3>Get introduced to over 2,000 of the <b>best software experts</b> on the web</h3>
 
-<form id="joinForm" novalidate="" name="joinForm" ng-submit="submit(joinForm.$valid, data)" class="ng-pristine ng-valid-email ng-invalid ng-invalid-required">
+<form id="joinForm" novalidate="" name="joinForm" ng-submit="submit(joinForm.$valid, data)" class="ng-invalid ng-invalid-required ng-valid-pattern ng-valid-minlength ng-valid-email ng-dirty">
 
-  <!-- ngIf: data.email -->
+  <!-- ngIf: data.email --><div class="homeNameDiv ng-scope form-group has-error has-feedback" ng-if="data.email" form-group="">
+    <input id="homeJoinName" name="name" form-control="" type="text" placeholder="Enter full name (e.g. John Smith)" ng-model="data.name" required="" ng-minlength="4" ng-pattern="/\w+ \w+/" tabindex="33212" ng-focus="focusInput(this)" ng-blur="blurInput(this)" class="ng-pristine form-control ng-invalid ng-invalid-required ng-valid-pattern ng-valid-minlength ng-touched">
 
-  <!-- ngIf: !data.email --><div class="homeEmailDiv ng-scope form-group" ng-if="!data.email" form-group="">
-    <input id="homeJoinEmail" form-control="" name="email" type="email" placeholder="Enter your email to get started ..." ng-model="data.email" ng-model-options="{updateOn:'default blur',debounce:{default:1000, blur:0}}" ng-change="updateEmail(joinForm.email)" required="" tabindex="33211" track-focus="signup" track-data="email" ng-focus="focusInput(this)" ng-blur="blurInput(this)" class="ng-pristine ng-untouched form-control ng-valid-email ng-invalid ng-invalid-required">
-    <!-- ngIf: formGroup.showError(joinForm.email) -->
+    <!-- ngIf: formGroup.showError(joinForm.name) --><div class="error ng-scope ng-active" ng-if="formGroup.showError(joinForm.name)" ng-messages="joinForm.name.$error">
+      <!-- ngMessage: required --><div ng-message="required" class="ng-scope">Full name required</div>
+      <!-- ngMessage: minlength -->
+      <!-- ngMessage: pattern -->
+      <!-- ngMessage: maxlength -->
+    </div><!-- end ngIf: formGroup.showError(joinForm.name) -->
     <!-- ngIf: updateFailed -->
-  </div><!-- end ngIf: !data.email -->
+  </div><!-- end ngIf: data.email -->
 
-  <button track-click="auth" data="subscribe" ng-class="data.email ? '' : 'focushide'" type="submit" class="btn btn-primary focushide" tabindex="33214" ng-focus="focusInput(this)"><b>Join</b></button>
+  <!-- ngIf: !data.email -->
 
-  <!-- ngIf: data.email -->
+  <button track-click="auth" data="subscribe" ng-class="data.email ? '' : 'focushide'" type="submit" class="btn btn-primary" tabindex="33214" ng-focus="focusInput(this)"><b>Join</b></button>
+
+  <!-- ngIf: data.email --><!-- end ngIf: data.email -->
+
 <a href="#">Actually I'm a software expert!</a>
 </form>
 

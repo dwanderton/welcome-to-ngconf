@@ -21,7 +21,7 @@ $(document).ready(function(){
 
   <section class="header">
  
-    <img src="/static/img/pages/about/airpair.png"><span style="font-size: 48px;color:black;font-weight: 600;">&nbsp;&nbsp; +&nbsp;&nbsp;&nbsp;</span> <img src="http://www.ng-conf.org/images/logo.svg">
+    <img src="/static/img/pages/about/airpair.png"><div style="font-size: 48px;color:black;font-weight: 600;">&nbsp;&nbsp; +&nbsp;&nbsp;&nbsp;</div> <img src="http://www.ng-conf.org/images/logo.svg">
     
     <table>
       <tbody><tr>

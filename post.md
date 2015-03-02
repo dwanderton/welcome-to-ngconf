@@ -1,8 +1,4 @@
-<style>
-.entry-title {display:none;}
-#posts {display:none;}
-.rail1CTA {display:none;}
-</style>
+
 <script>
 $(document).ready(function(){
  /*  $('header').css('display', 'none').remove();
@@ -16,7 +12,11 @@ $('header').css('display', 'none').remove();
 
 </script>
 
-
+<style>
+.entry-title {display:none;}
+#posts {display:none;}
+.rail1CTA {display:none;}
+</style>
 <div class="main-wrap">
   <div notifications=""></div>
   <main ng-view="" id="home">

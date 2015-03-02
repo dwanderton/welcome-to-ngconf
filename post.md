@@ -58,6 +58,10 @@ $(document).ready(function(){
         event.preventDefault();
         $(this).fadeOut(400, 'swing', function(){
             $('#imexpert').fadeIn();
+            
+            $('#expert').fadeOut(400, 'swing', function(){
+                $('#customer').fadeIn();
+            });
         });
 
     });
@@ -138,7 +142,7 @@ $(document).ready(function(){
 
 </div>
 <!-- END CUSTOMER START EXPERT -->
-<div id="expert1" style="display:none;" cta-home-join=""><ul>
+<div id="expert" style="display:none;" cta-home-join=""><ul>
   <li><img src="//0.gravatar.com/avatar/b56bb22b3a4b83c6b534b4c114671380?s=100"></li>
   <li><img src="//0.gravatar.com/avatar/c01ef7584331527e1c600b85ba6a75f3?s=100"></li>
   <li><img src="//0.gravatar.com/avatar/892cdc57a3a64ea0ad59827bc6d1ddf7?s=100"></li>

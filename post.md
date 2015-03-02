@@ -5,6 +5,7 @@ $(document).ready(function(){
     $('#posts').css('display', 'none').remove();
     $('.rail1CTA').css('display', 'none').remove();
     $('hr').css('display', 'none').remove();
+    $('.share').css('border-bottom', '0px');
 });
 
 </script>

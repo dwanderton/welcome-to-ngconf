@@ -9,10 +9,11 @@ $(document).ready(function(){
     $('.share').css('border-bottom', '0px');
     
     
-    $( "#nextButton" ).click(function() {
+    $( "#nextButton" ).click(function(event) {
+        event.preventDefault();
         if(i==0){
             alert( "Handler for .click() called." );
-            var i = 1;
+            i++;
         }
     });
     

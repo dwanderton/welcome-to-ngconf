@@ -12,7 +12,6 @@ $(document).ready(function(){
     $( "#nextButton" ).click(function(event) {
         event.preventDefault();
         if(i==0){
-            alert( "Handler for .click() called." );
             $(this).fadeOut();
             $('#emailContainer').fadeOut(400, 'swing', function(){
                 $('#submitButton').fadeIn();

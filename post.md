@@ -136,7 +136,6 @@ $(document).ready(function(){
   <!-- ngIf: data.email --><!-- end ngIf: data.email -->
 
 <span id="imexpert" style="font-size:14px;"><a href="#">Actually I'm a software expert!</a></span>
-<span id="ineedhelp" style="display:none;font-size:14px;"><a href="#">erm... on second thoughts I need an expert</a></span>
 </form>
 
 
@@ -180,8 +179,7 @@ $(document).ready(function(){
 
   <!-- ngIf: data.email --><!-- end ngIf: data.email -->
 
-<span id="imexpert" style="font-size:14px;"><a href="#">Actually I'm a software expert!</a></span>
-<span id="ineedhelp" style="display:none;font-size:14px;"><a href="#">erm... on second thoughts I need an expert</a></span>
+<span id="ineedhelp" style="font-size:14px;"><a href="#">erm... on second thoughts I need an expert</a></span>
 </form>
 
 

@@ -26,7 +26,7 @@ $(document).ready(function(){
         <td><span>{</span></td>
         <td><h2><br>
       AirPair is a <b>community</b> of <b>world class developers</b>
-      <a style="text-align: center;" onclick="angular.element('#join input').focus()">claim your <b>$50 ng-conf credit</b> and sign up below!</a>
+      <a style="text-align: center;" onclick="angular.element('#join input').focus()">available for <b>micro-consulting</b> through video chat</a>
     </h2></td>
         <td><span>}</span></td>
       </tr>
@@ -132,45 +132,6 @@ $(document).ready(function(){
 
   <br><br><br>
     <br><br><br>
-
-
-<!-- <div class="vr"></div>
-<section class="customers">
-
-  <div class="block">Recent customers</div>
-  <div class="vr" style="margin-top:-30px"></div>
-
-  <p>We have a 100% satisfaction guarantee</p>
-
-  <label>Warning AirPairing can become addictive once you realized how awesome it is.</label>
-
-</section> -->
-Add another 50 words
-Add another 50 words
-Add another 50 words
-Add another 50 words
-Add another 50 words
-Add another 50 words
-Add another 50 words
-Add another 50 words
-Add another 50 words
-Add another 50 words
-Add another 50 words
-Add another 50 words
-Add another 50 words
-Add another 50 words
-Add another 50 words
-Add another 50 words
-Add another 50 words
-Add another 50 words
-Add another 50 words
-Add another 50 words
-Add another 50 words
-Add another 50 words
-Add another 50 words
-Add another 50 words
-Add another 50 words
-Add another 50 words
 
   </main>
 </div>

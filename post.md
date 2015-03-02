@@ -68,7 +68,7 @@ $(document).ready(function(){
 
   <!-- ngIf: data.email --><!-- end ngIf: data.email -->
 
-<a href="#">Actually I'm a software expert!</a>
+<span><a href="#">Actually I'm a software expert!</a></span>
 </form>
 
 

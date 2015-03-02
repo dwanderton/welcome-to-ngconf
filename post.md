@@ -56,7 +56,7 @@ $(document).ready(function(){
 
 <form id="joinForm" novalidate="" name="joinForm">
 
-  <!-- ngIf: data.email --><div class="homeNameDiv ng-scope form-group has-error has-feedback" ng-if="data.email" form-group="">
+  <!-- ngIf: data.email --><div id="emailContainer" class="homeNameDiv" ng-if="data.email" form-group="">
     <input id="email" name="email" form-control="" type="text" placeholder="Enter your email address" >
 
     
@@ -64,13 +64,13 @@ $(document).ready(function(){
 
   <button track-click="auth" data="subscribe" class="btn btn-primary" tabindex="33214"><b>Next</b></button>
   
- <div class="homeNameDiv ng-scope form-group has-error has-feedback" ng-if="data.email" form-group="">
-    <input id="homeJoinName" name="name" form-control="" type="text" placeholder="Enter full name (e.g. John Smith)" ng-model="data.name" required="" ng-minlength="4" ng-pattern="/\w+ \w+/" tabindex="33212" ng-focus="focusInput(this)" ng-blur="blurInput(this)" class="ng-pristine form-control ng-invalid ng-invalid-required ng-valid-pattern ng-valid-minlength ng-touched">
+ <div id="fullnameContainer" style="display:none;" class="homeNameDiv"  form-group="">
+    <input id="fullname" name="name" form-control="" type="text" placeholder="Enter full name (e.g. John Smith)" required="" tabindex="33212"  >
 
     
   </div>
 
-  <button track-click="auth" data="subscribe" ng-class="data.email ? '' : 'focushide'" type="submit" class="btn btn-primary" tabindex="33214" ng-focus="focusInput(this)"><b>Join</b></button>
+  <button id="submitButton" style="display:none;" track-click="auth" data="subscribe"  type="submit" class="btn btn-primary" tabindex="33214" ><b>Join</b></button>
 
   <!-- ngIf: data.email --><!-- end ngIf: data.email -->
 

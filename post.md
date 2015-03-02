@@ -58,10 +58,6 @@ $(document).ready(function(){
         event.preventDefault();
         $(this).fadeOut(400, 'swing', function(){
             $('#imexpert').fadeIn();
-            
-            $('#expert').fadeOut(400, 'swing', function(){
-                $('#customer').fadeIn();
-            });
         });
 
     });

@@ -14,7 +14,7 @@ $(document).ready(function(){
         if(i==0){
             alert( "Handler for .click() called." );
             $(this).fadeOut();
-            $('emailContainer').fadeOut();
+            $('#emailContainer').fadeOut();
             i++;
         }
     });

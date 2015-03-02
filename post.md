@@ -44,6 +44,19 @@ $(document).ready(function(){
         }
     });
     
+    
+    $( "#imexpert" ).click(function(event) {
+        event.preventDefault();
+        $(this).fadeOut(400, 'swing', function(){
+            $('#ineedhelp').fadeIn();
+        });
+    });
+    $( "#ineedhelo" ).click(function(event) {
+        event.preventDefault();
+        $(this).fadeOut(400, 'swing', function(){
+            $('#imexpert').fadeIn();
+        });
+    });
 });
 
 </script>
@@ -114,7 +127,8 @@ $(document).ready(function(){
 
   <!-- ngIf: data.email --><!-- end ngIf: data.email -->
 
-<span style="display:none;"><a href="#">Actually I'm a software expert!</a></span>
+<span id="imexpert"><a href="#">Actually I'm a software expert!</a></span>
+<span id="ineedhelp" style="display:none;"><a href="#">erm... on second thoughts I need an expert</a></span>
 </form>
 
 

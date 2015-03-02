@@ -1,12 +1,9 @@
 
 <script>
 $(document).ready(function(){
- /*  $('header').css('display', 'none').remove();
-    $('#side').css('display', 'none').remove();
-    $('body > div > main > article > ul').css('display', 'none').remove();
-$('hr').css('display', 'none').remove();
-$('footer').css('display', 'none').remove();
-$('header').css('display', 'none').remove();
+   $('.entry-title').css('display', 'none').remove();
+    $('#posts').css('display', 'none').remove();
+    $('.rail1CTA').css('display', 'none').remove();
 
 });
 

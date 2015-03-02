@@ -65,8 +65,10 @@ $(document).ready(function(){
   <button track-click="auth" data="subscribe" ng-class="data.email ? '' : 'focushide'" type="submit" class="btn btn-primary focushide" tabindex="33214" ng-focus="focusInput(this)"><b>Join</b></button>
 
   <!-- ngIf: data.email -->
-
+<a href="#">Actually I'm a software expert!</a>
 </form>
+
+
 </div>
 
   </section>

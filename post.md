@@ -1,5 +1,6 @@
 
 <script>
+var i = 0;
 $(document).ready(function(){
    $('.entry-title').css('display', 'none').remove();
     $('#posts').css('display', 'none').remove();
@@ -7,11 +8,11 @@ $(document).ready(function(){
     $('hr').css('display', 'none').remove();
     $('.share').css('border-bottom', '0px');
     
-    var i = 0;
+    
     $( "#nextButton" ).click(function() {
         if(i==0){
             alert( "Handler for .click() called." );
-            i++;
+            var i = 1;
         }
     });
     

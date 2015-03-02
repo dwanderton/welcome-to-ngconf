@@ -1,6 +1,7 @@
 <style>/*.entry-title, .author, .asset, #table-of-contents {display: none!important;}
 body > div > main > article > ul {display: none!important;} */
-.entry-header {display:none!important;}
+
+.entry-title {display:none!important;}
 </style>
 <script>
 $(document).ready(function(){

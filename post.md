@@ -26,7 +26,7 @@ $(document).ready(function(){
         <td><span>{</span></td>
         <td><h2><br>
       AirPair is a <b>community</b> of <b>world class developers</b>
-      <a style="text-align: center;" onclick="angular.element('#join input').focus()">available for <b>micro-consulting</b> through video chat</a>
+      <a style="text-align: center;" onclick="angular.element('#join input').focus()">claim your <b>$50 ng-conf credit</b> - sign up below</a>
     </h2></td>
         <td><span>}</span></td>
       </tr>

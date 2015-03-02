@@ -154,7 +154,7 @@ $(document).ready(function(){
 </ul>
 
 
-<h3>Get introduced to over 2,000 of the <b>best software experts</b> on the web</h3>
+<h3>EXPERT MESSAGE Get introduced to over 2,000 of the <b>best software experts</b> on the web</h3>
 
 
 

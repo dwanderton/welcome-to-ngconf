@@ -36,7 +36,7 @@ $(document).ready(function(){
             $(this).fadeOut();
             $('#fullnameContainer').fadeOut(400, 'swing', function(){
                 
-                
+               $('#thankyou').fadeIn();
                 
             });
             
@@ -92,10 +92,10 @@ $(document).ready(function(){
 
 <h3>Get introduced to over 2,000 of the <b>best software experts</b> on the web</h3>
 
-<h3>Thanks for signing up! We'll contact you shortly!</h3>
+
 
 <form id="joinForm" novalidate="" name="joinForm">
-
+<h3 id="thankyou" style="display:none;">Thanks for signing up! We'll contact you shortly!</h3>
   <!-- ngIf: data.email --><div id="emailContainer" class="homeNameDiv" ng-if="data.email" form-group="">
     <input id="email" name="email" form-control="" type="text" placeholder="Enter your email address" >
 

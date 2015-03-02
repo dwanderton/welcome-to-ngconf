@@ -1,5 +1,6 @@
 <style>
 .entry-title {display:none;}
+#posts {display:none;}
 </style>
 <script>
 $(document).ready(function(){

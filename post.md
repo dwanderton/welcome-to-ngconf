@@ -89,7 +89,7 @@ $(document).ready(function(){
 
   <section id="join">
 
-    <div cta-home-join=""><ul>
+    <div id="customer" cta-home-join=""><ul>
   <li><img src="//0.gravatar.com/avatar/b56bb22b3a4b83c6b534b4c114671380?s=100"></li>
   <li><img src="//0.gravatar.com/avatar/c01ef7584331527e1c600b85ba6a75f3?s=100"></li>
   <li><img src="//0.gravatar.com/avatar/892cdc57a3a64ea0ad59827bc6d1ddf7?s=100"></li>
@@ -133,6 +133,56 @@ $(document).ready(function(){
 
 
 </div>
+<!-- END CUSTOMER START EXPERT -->
+
+    <div id="expert" cta-home-join=""><ul>
+  <li><img src="//0.gravatar.com/avatar/b56bb22b3a4b83c6b534b4c114671380?s=100"></li>
+  <li><img src="//0.gravatar.com/avatar/c01ef7584331527e1c600b85ba6a75f3?s=100"></li>
+  <li><img src="//0.gravatar.com/avatar/892cdc57a3a64ea0ad59827bc6d1ddf7?s=100"></li>
+  <li class="you nomob">
+    <!-- ngIf: !session || !session.email --><b ng-if="!session || !session.email" class="ng-scope">Hello</b><!-- end ngIf: !session || !session.email -->
+    <!-- ngIf: session.email -->
+  </li>
+  <li><img src="//0.gravatar.com/avatar/b988f05edd27e18eb63b0c5abfdc113c?s=100"></li>
+  <li><img src="//0.gravatar.com/avatar/f524745bb9975ba777b5c4a9922eb614?s=100"></li>
+  <li><img src="//0.gravatar.com/avatar/fbf41c66afb1e3807b7b330c2d8fcc28?s=100"></li>
+</ul>
+
+
+<h3>Get introduced to over 2,000 of the <b>best software experts</b> on the web</h3>
+
+
+
+<form id="joinForm" novalidate="" name="joinForm">
+<h3 id="thankyou" style="display:none;">Thanks for signing up! We'll contact you shortly!</h3>
+  <!-- ngIf: data.email --><div id="emailContainer" class="homeNameDiv" ng-if="data.email" form-group="">
+    <input id="email" name="email" form-control="" type="text" placeholder="Enter your email address" >
+
+    
+  </div>
+
+  <button id="nextButton" track-click="auth" data="subscribe" class="btn btn-primary" tabindex="33214"><b>Next</b></button>
+  
+ <div id="fullnameContainer" style="display:none;" class="homeNameDiv"  form-group="">
+    <input id="fullname" name="name" form-control="" type="text" placeholder="Enter full name (e.g. John Smith)" required="" tabindex="33212"  >
+
+    
+  </div>
+
+  <button id="submitButton" style="display:none;" track-click="auth" data="subscribe"  type="submit" class="btn btn-primary" tabindex="33214" ><b>Join</b></button>
+
+  <!-- ngIf: data.email --><!-- end ngIf: data.email -->
+
+<span id="imexpert" style="font-size:14px;"><a href="#">Actually I'm a software expert!</a></span>
+<span id="ineedhelp" style="display:none;font-size:14px;"><a href="#">erm... on second thoughts I need an expert</a></span>
+</form>
+
+
+</div>
+
+
+
+
 
   </section>
 

@@ -51,17 +51,19 @@ $(document).ready(function(){
             $('#ineedhelp').fadeIn();
         });
         $('#customer').fadeOut(400, 'swing', function(){
-            $('#expert1').fadeIn();
+            $('#expert').fadeIn();
         });
     });
-    $( "#ineedhelp" ).click(function(event) {
+    $("#ineedhelp").click(function(event) {
         event.preventDefault();
         $(this).fadeOut(400, 'swing', function(){
             $('#imexpert').fadeIn();
+            
+            $('#expert').fadeOut(400, 'swing', function(){
+                $('#customer').fadeIn();
+            });
         });
-        $('#expert1').fadeOut(400, 'swing', function(){
-            $('#customer').fadeIn();
-        });
+
     });
 });
 

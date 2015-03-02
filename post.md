@@ -20,7 +20,10 @@ $(document).ready(function(){
   <main ng-view="" id="home">
 
   <section class="header">
-    <img src="/static/img/pages/about/airpair.png">
+  <h1>
+    <img src="/static/img/pages/about/airpair.png">&nbsp;&nbsp; +&nbsp;&nbsp;&nbsp; <img src="http://www.ng-conf.org/images/logo.svg">
+    
+    </h1>
     <table>
       <tbody><tr>
         <td><span>{</span></td>

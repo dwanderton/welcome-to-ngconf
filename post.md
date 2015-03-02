@@ -80,14 +80,14 @@ $(document).ready(function(){
 
   <section class="header">
  
-    <img src="/static/img/pages/about/airpair.png"><b style="font-size:28px">&nbsp;&nbsp; +&nbsp;&nbsp;&nbsp;</b> <img src="http://www.ng-conf.org/images/logo.svg">
+    <img src="/static/img/pages/about/airpair.png"><b style="font-size:28px">&nbsp;&nbsp; +&nbsp;&nbsp;&nbsp;</b> <!--<img src="http://www.ng-conf.org/images/logo.svg"> --><img src="http://static1.squarespace.com/static/54b45420e4b0c8804f6ad484/t/54d71e49e4b0a551f3b0fc04/1425331408076/?format=1500w">
     
     <table>
       <tbody><tr>
         <td><span>{</span></td>
         <td><h2><br>
       AirPair is a <b>community</b> of <b>world class developers</b>
-      <a style="text-align: center;" onclick="angular.element('#join input').focus()">claim your <b>$50 ng-conf credit</b> - sign up below</a>
+      <a style="text-align: center;" onclick="angular.element('#join input').focus()">claim your <b>$50 launch festival credit</b> - sign up below</a>
     </h2></td>
         <td><span>}</span></td>
       </tr>
@@ -135,7 +135,7 @@ $(document).ready(function(){
 
   <!-- ngIf: data.email --><!-- end ngIf: data.email -->
 
-<span id="imexpert" style="font-size:14px;"><a href="#">Actually I'm a software expert!</a></span>
+<!--<span id="imexpert" style="font-size:14px;"><a href="#">Actually I'm a software expert!</a></span> -->
 </form>
 
 

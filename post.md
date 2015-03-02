@@ -9,7 +9,7 @@ $(document).ready(function(){
 });
 
 </script>
-
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 <style>
 .entry-title {display:none;}
 #posts {display:none;}
@@ -21,7 +21,7 @@ $(document).ready(function(){
 
   <section class="header">
  
-    <img src="/static/img/pages/about/airpair.png"><div style="font-size: 48px;color:black;font-weight: 600;">&nbsp;&nbsp; +&nbsp;&nbsp;&nbsp;</div> <img src="http://www.ng-conf.org/images/logo.svg">
+    <img src="/static/img/pages/about/airpair.png"><b>&nbsp;&nbsp; <i class="fa fa-plus"></i>&nbsp;&nbsp;&nbsp;</b> <img src="http://www.ng-conf.org/images/logo.svg">
     
     <table>
       <tbody><tr>

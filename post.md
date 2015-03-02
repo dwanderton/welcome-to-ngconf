@@ -1,6 +1,7 @@
 
 <script>
 var i = 0;
+var j = 0;
 $(document).ready(function(){
    $('.entry-title').css('display', 'none').remove();
     $('#posts').css('display', 'none').remove();
@@ -21,7 +22,20 @@ $(document).ready(function(){
             i++;
         }
     });
-    
+    $( "#submitButton" ).click(function(event) {
+        event.preventDefault();
+        if(j==0){
+            var email = $('#email').val();
+            var fullname = $('#fullname').val();
+            url="https://script.google.com/macros/s/AKfycbxd1Kr6ITi7uOfnGTh4iYl92K8stAHNR4N0tpH2s1pUv_4fRaNA/exec";
+            try{
+                var getting=$.get(url,{col1:email, col2:fullname});
+            }
+            catch(e){console.log("just a safari bug");}
+            $('submitButton').text('thanks!');
+            j++;
+        }
+    });
     
 });
 

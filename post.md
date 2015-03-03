@@ -212,10 +212,43 @@ $(document).ready(function(){
     
   </div>
 
-  <button id="nextButtonExpert" track-click="auth" data="subscribe" class="btn btn-primary" tabindex="33214"><b>Next</b></button>
+  <button id="nextButtonEmailExpert" track-click="auth" data="subscribe" class="btn btn-primary" tabindex="33214"><b>Next</b></button>
+  
+
   
  <div id="fullnameContainerExpert" style="display:none;" class="homeNameDiv"  form-group="">
     <input id="fullnameExpert" name="name" form-control="" type="text" placeholder="Enter full name (e.g. John Smith)" required="" tabindex="33212"  >
+
+    
+  </div>
+  <button  style="display:none;" id="nextButtonFullnameExpert" track-click="auth" data="subscribe" class="btn btn-primary" tabindex="33214"><b>Next</b></button>
+
+<div id="githubContainerExpert" class="homeNameDiv" ng-if="data.email" form-group="">
+    <input id="githubExpert" name="email" form-control="" type="text" placeholder="Enter your github urk" >
+
+    
+  </div>
+  
+    <button  style="display:none;"  id="nextButtonGithubExpert" track-click="auth" data="subscribe" class="btn btn-primary" tabindex="33214"><b>Next</b></button>
+  
+  <div id="stackoverflowContainerExpert" class="homeNameDiv" ng-if="data.email" form-group="">
+    <input id="stackoverflowExpert" name="email" form-control="" type="text" placeholder="Enter your stackoverflow url" >
+
+    
+  </div>
+  
+    <button  style="display:none;"  id="nextButtonStackoverflowExpert" track-click="auth" data="subscribe" class="btn btn-primary" tabindex="33214"><b>Next</b></button>
+  
+  <div id="twitterContainerExpert" class="homeNameDiv" ng-if="data.email" form-group="">
+    <input id="twitterExpert" name="email" form-control="" type="text" placeholder="Enter your twitter url" >
+
+    
+  </div>
+  
+    <button   style="display:none;" id="nextButtonTwitterExpert" track-click="auth" data="subscribe" class="btn btn-primary" tabindex="33214"><b>Next</b></button>
+  
+  <div id="linkedinContainerExpert" class="homeNameDiv" ng-if="data.email" form-group="">
+    <input id="linkedinExpert" name="email" form-control="" type="text" placeholder="Enter your linkedin url" >
 
     
   </div>

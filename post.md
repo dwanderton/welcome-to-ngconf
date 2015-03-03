@@ -2,6 +2,11 @@
 <script>
 var i = 0;
 var j = 0;
+var k = 0;
+var l = 0;
+var m = 0;
+var n = 0;
+var o = 0;
 $(document).ready(function(){
    $('.entry-title').css('display', 'none').remove();
     $('#posts').css('display', 'none').remove();
@@ -46,20 +51,72 @@ $(document).ready(function(){
         }
     });
     
-        // These are the jQuery events that control customer submission
+        // These are the jQuery events that control expert submission
     
-    $( "#nextButtonExpert" ).click(function(event) {
+    $( "#nextButtonEmailExpert" ).click(function(event) {
         event.preventDefault();
-        if(i==0){
+        if(k==0){
             $(this).fadeOut();
-            $('#emailContainer').fadeOut(400, 'swing', function(){
-                $('#submitButton').fadeIn();
-                $('#fullnameContainer').fadeIn();
+            $('#emailContainerExpert').fadeOut(400, 'swing', function(){
+                $('#NextButtonFullnameExpert').fadeIn();
+                $('#fullnameContainerExpert').fadeIn();
             });
 
-            i++;
+            k++;
         }
     });
+    $( "#nextButtonFullnameExpert" ).click(function(event) {
+        event.preventDefault();
+        if(l==0){
+            $(this).fadeOut();
+            $('#fullnameContainerExpert').fadeOut(400, 'swing', function(){
+                $('#NextButtonGithubExpert').fadeIn();
+                $('#githubContainerExpert').fadeIn();
+            });
+
+            l++;
+        }
+    });
+    $( "#nextButtonGithubExpert" ).click(function(event) {
+        event.preventDefault();
+        if(m==0){
+            $(this).fadeOut();
+            $('#githubContainerExpert').fadeOut(400, 'swing', function(){
+                $('#NextButtonStackoverflowExpert').fadeIn();
+                $('#stackoverflowContainerExpert').fadeIn();
+            });
+
+            m++;
+        }
+    });
+    $( "#nextButtonStackoverflowExpert" ).click(function(event) {
+        event.preventDefault();
+        if(n==0){
+            $(this).fadeOut();
+            $('#stackoverflowContainerExpert').fadeOut(400, 'swing', function(){
+                $('#NextButtonTwitterExpert').fadeIn();
+                $('#twitterContainerExpert').fadeIn();
+            });
+
+            n++;
+        }
+    });
+    $( "#nextButtonTwitterExpert" ).click(function(event) {
+        event.preventDefault();
+        if(o==0){
+            $(this).fadeOut();
+            $('#twitterContainerExpert').fadeOut(400, 'swing', function(){
+                $('#submitButtonExpert').fadeIn();
+                $('#linkedinContainerExpert').fadeIn();
+            });
+
+            o++;
+        }
+    });
+    
+    
+    
+    
     $( "#submitButtonExpert" ).click(function(event) {
         event.preventDefault();
         if(j==0){

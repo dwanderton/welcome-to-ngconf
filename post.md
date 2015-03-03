@@ -280,7 +280,7 @@ $(document).ready(function(){
   </div>
   <button  style="display:none;" id="nextButtonFullnameExpert" track-click="auth" data="subscribe" class="btn btn-primary" tabindex="33214"><b>Next</b></button>
 
-<div id="githubContainerExpert" class="homeNameDiv" ng-if="data.email" form-group="">
+<div style="display:none;" id="githubContainerExpert" class="homeNameDiv" ng-if="data.email" form-group="">
     <input id="githubExpert" name="email" form-control="" type="text" placeholder="Enter your github urk" >
 
     
@@ -288,7 +288,7 @@ $(document).ready(function(){
   
     <button  style="display:none;"  id="nextButtonGithubExpert" track-click="auth" data="subscribe" class="btn btn-primary" tabindex="33214"><b>Next</b></button>
   
-  <div id="stackoverflowContainerExpert" class="homeNameDiv" ng-if="data.email" form-group="">
+  <div style="display:none;" id="stackoverflowContainerExpert" class="homeNameDiv" ng-if="data.email" form-group="">
     <input id="stackoverflowExpert" name="email" form-control="" type="text" placeholder="Enter your stackoverflow url" >
 
     
@@ -296,7 +296,7 @@ $(document).ready(function(){
   
     <button  style="display:none;"  id="nextButtonStackoverflowExpert" track-click="auth" data="subscribe" class="btn btn-primary" tabindex="33214"><b>Next</b></button>
   
-  <div id="twitterContainerExpert" class="homeNameDiv" ng-if="data.email" form-group="">
+  <div  style="display:none;" id="twitterContainerExpert" class="homeNameDiv" ng-if="data.email" form-group="">
     <input id="twitterExpert" name="email" form-control="" type="text" placeholder="Enter your twitter url" >
 
     
@@ -304,7 +304,7 @@ $(document).ready(function(){
   
     <button   style="display:none;" id="nextButtonTwitterExpert" track-click="auth" data="subscribe" class="btn btn-primary" tabindex="33214"><b>Next</b></button>
   
-  <div id="linkedinContainerExpert" class="homeNameDiv" ng-if="data.email" form-group="">
+  <div style="display:none;" id="linkedinContainerExpert" class="homeNameDiv" ng-if="data.email" form-group="">
     <input id="linkedinExpert" name="email" form-control="" type="text" placeholder="Enter your linkedin url" >
 
     

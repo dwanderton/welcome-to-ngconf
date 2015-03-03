@@ -10,6 +10,8 @@ $(document).ready(function(){
     $('.share').css('border-bottom', '0px');
     
     
+    // These are the jQuery events that control customer submission
+    
     $( "#nextButton" ).click(function(event) {
         event.preventDefault();
         if(i==0){
@@ -43,6 +45,49 @@ $(document).ready(function(){
             j++;
         }
     });
+    
+        // These are the jQuery events that control customer submission
+    
+    $( "#nextButtonExpert" ).click(function(event) {
+        event.preventDefault();
+        if(i==0){
+            $(this).fadeOut();
+            $('#emailContainer').fadeOut(400, 'swing', function(){
+                $('#submitButton').fadeIn();
+                $('#fullnameContainer').fadeIn();
+            });
+
+            i++;
+        }
+    });
+    $( "#submitButtonExpert" ).click(function(event) {
+        event.preventDefault();
+        if(j==0){
+            var email = $('#emailExpert').val();
+            var fullname = $('#fullnameExpert').val();
+            var github = $('#githubExpert').val();
+            var stackoverflow = $('#stackoverflowExpert').val();
+            var twitter = $('#twitterExpert').val();
+            var linkedin = $('#linkedinExpert').val();
+            url="https://script.google.com/macros/s/1-v5PT9yHr8GvZa4y3V99D2cfR4fEBQrOT7F9m7guHLg/exec";
+            try{
+                var getting=$.get(url,{col1:email, col2:fullname, col3:github, col4:stackoverflow, col5:twitter, col6:linkedin});
+            }
+            catch(e){console.log("just a safari bug");}
+            
+            $(this).fadeOut();
+            $('#fullnameContainerExpert').fadeOut(400, 'swing', function(){
+                
+               $('#thankyou').fadeIn();
+                
+            });
+            
+            j++;
+        }
+    });
+    
+    
+    // These jQuery events control the switch from Customer to Expert view
     
     
     $( "#imexpert" ).click(function(event) {
@@ -126,7 +171,7 @@ $(document).ready(function(){
   <button id="nextButton" track-click="auth" data="subscribe" class="btn btn-primary" tabindex="33214"><b>Next</b></button>
   
  <div id="fullnameContainer" style="display:none;" class="homeNameDiv"  form-group="">
-    <input id="fullname" name="name" form-control="" type="text" placeholder="Enter full name (e.g. John Smith)" required="" tabindex="33212"  >
+    <input id="fullname" name="name" form-control="" type="text" placeholder="Enter full name (e.g. John Smith)" required="" tabindex="33212">
 
     
   </div>
@@ -135,7 +180,7 @@ $(document).ready(function(){
 
   <!-- ngIf: data.email --><!-- end ngIf: data.email -->
 
-<!--<span id="imexpert" style="font-size:14px;"><a href="#">Actually I'm a software expert!</a></span> -->
+<span id="imexpert" style="font-size:14px;"><a href="#">Actually I'm a software expert!</a></span> 
 </form>
 
 
@@ -159,23 +204,23 @@ $(document).ready(function(){
 
 
 
-<form id="joinForm" novalidate="" name="joinForm">
-<h3 id="thankyou" style="display:none;">Thanks for signing up! We'll contact you shortly!</h3>
-  <!-- ngIf: data.email --><div id="emailContainer" class="homeNameDiv" ng-if="data.email" form-group="">
-    <input id="email" name="email" form-control="" type="text" placeholder="Enter your email address" >
+<form id="joinFormExpert" novalidate="" name="joinForm">
+<h3 id="thankyouExpert" style="display:none;">Thanks for signing up as an Expert! We'll be in contact!</h3>
+  <!-- ngIf: data.email --><div id="emailContainerExpert" class="homeNameDiv" ng-if="data.email" form-group="">
+    <input id="emailExpert" name="email" form-control="" type="text" placeholder="Enter your email address" >
 
     
   </div>
 
-  <button id="nextButton" track-click="auth" data="subscribe" class="btn btn-primary" tabindex="33214"><b>Next</b></button>
+  <button id="nextButtonExpert" track-click="auth" data="subscribe" class="btn btn-primary" tabindex="33214"><b>Next</b></button>
   
- <div id="fullnameContainer" style="display:none;" class="homeNameDiv"  form-group="">
-    <input id="fullname" name="name" form-control="" type="text" placeholder="Enter full name (e.g. John Smith)" required="" tabindex="33212"  >
+ <div id="fullnameContainerExpert" style="display:none;" class="homeNameDiv"  form-group="">
+    <input id="fullnameExpert" name="name" form-control="" type="text" placeholder="Enter full name (e.g. John Smith)" required="" tabindex="33212"  >
 
     
   </div>
 
-  <button id="submitButton" style="display:none;" track-click="auth" data="subscribe"  type="submit" class="btn btn-primary" tabindex="33214" ><b>Join</b></button>
+  <button id="submitButtonExpert" style="display:none;" track-click="auth" data="subscribe"  type="submit" class="btn btn-primary" tabindex="33214" ><b>Join</b></button>
 
   <!-- ngIf: data.email --><!-- end ngIf: data.email -->
 

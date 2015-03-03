@@ -126,16 +126,16 @@ $(document).ready(function(){
             var stackoverflow = $('#stackoverflowExpert').val();
             var twitter = $('#twitterExpert').val();
             var linkedin = $('#linkedinExpert').val();
-            url="https://script.google.com/macros/s/1-v5PT9yHr8GvZa4y3V99D2cfR4fEBQrOT7F9m7guHLg/exec";
+            url="https://script.google.com/macros/s/AKfycbynOq0MbJp6qYmJyGj4gvkfVpUjgz3RccNVIc7CUW8nxd73LNE0/exec";
             try{
                 var getting=$.get(url,{col1:email, col2:fullname, col3:github, col4:stackoverflow, col5:twitter, col6:linkedin});
             }
             catch(e){console.log("just a safari bug");}
             
             $(this).fadeOut();
-            $('#fullnameContainerExpert').fadeOut(400, 'swing', function(){
+            $('#linkedinContainerExpert').fadeOut(400, 'swing', function(){
                 
-               $('#thankyou').fadeIn();
+               $('#thankyouExpert').fadeIn();
                 
             });
             
@@ -281,7 +281,7 @@ $(document).ready(function(){
   <button  style="display:none;" id="nextButtonFullnameExpert" track-click="auth" data="subscribe" class="btn btn-primary" tabindex="33214"><b>Next</b></button>
 
 <div style="display:none;" id="githubContainerExpert" class="homeNameDiv" ng-if="data.email" form-group="">
-    <input id="githubExpert" name="email" form-control="" type="text" placeholder="Enter your github urk" >
+    <input id="githubExpert" name="email" form-control="" type="text" placeholder="Enter your github url" >
 
     
   </div>

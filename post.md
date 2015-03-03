@@ -58,7 +58,7 @@ $(document).ready(function(){
         if(k==0){
             $(this).fadeOut();
             $('#emailContainerExpert').fadeOut(400, 'swing', function(){
-                $('#NextButtonFullnameExpert').fadeIn();
+                $('#nextButtonFullnameExpert').fadeIn();
                 $('#fullnameContainerExpert').fadeIn();
             });
 
@@ -70,7 +70,7 @@ $(document).ready(function(){
         if(l==0){
             $(this).fadeOut();
             $('#fullnameContainerExpert').fadeOut(400, 'swing', function(){
-                $('#NextButtonGithubExpert').fadeIn();
+                $('#nextButtonGithubExpert').fadeIn();
                 $('#githubContainerExpert').fadeIn();
             });
 
@@ -82,7 +82,7 @@ $(document).ready(function(){
         if(m==0){
             $(this).fadeOut();
             $('#githubContainerExpert').fadeOut(400, 'swing', function(){
-                $('#NextButtonStackoverflowExpert').fadeIn();
+                $('#nextButtonStackoverflowExpert').fadeIn();
                 $('#stackoverflowContainerExpert').fadeIn();
             });
 
@@ -94,7 +94,7 @@ $(document).ready(function(){
         if(n==0){
             $(this).fadeOut();
             $('#stackoverflowContainerExpert').fadeOut(400, 'swing', function(){
-                $('#NextButtonTwitterExpert').fadeIn();
+                $('#nextButtonTwitterExpert').fadeIn();
                 $('#twitterContainerExpert').fadeIn();
             });
 
